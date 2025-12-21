@@ -1,0 +1,49 @@
+Feature: native_country
+chi2=317.2303857833171
+p=2.2113858852543023e-44
+dof=41
+Contingency Table:
+income_bin                       0     1
+native_country                          
+ ?                             437   146
+ Cambodia                       12     7
+ Canada                         82    39
+ China                          55    20
+ Columbia                       57     2
+ Cuba                           70    25
+ Dominican-Republic             68     2
+ Ecuador                        24     4
+ El-Salvador                    97     9
+ England                        60    30
+ France                         17    12
+ Germany                        93    44
+ Greece                         21     8
+ Guatemala                      61     3
+ Haiti                          40     4
+ Holand-Netherlands              1     0
+ Honduras                       12     1
+ Hong                           14     6
+ Hungary                        10     3
+ India                          60    40
+ Iran                           25    18
+ Ireland                        19     5
+ Italy                          48    25
+ Jamaica                        71    10
+ Japan                          38    24
+ Laos                           16     2
+ Mexico                        610    33
+ Nicaragua                      32     2
+ Outlying-US(Guam-USVI-etc)     14     0
+ Peru                           29     2
+ Philippines                   137    61
+ Poland                         48    12
+ Portugal                       33     4
+ Puerto-Rico                   102    12
+ Scotland                        9     3
+ South                          64    16
+ Taiwan                         31    20
+ Thailand                       15     3
+ Trinadad&Tobago                17     2
+ United-States               21999  7171
+ Vietnam                        62     5
+ Yugoslavia                     10     6

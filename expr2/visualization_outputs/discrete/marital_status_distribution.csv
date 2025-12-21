@@ -1,0 +1,8 @@
+category,train_count,test_count
+ Married-civ-spouse,14976,7403
+ Never-married,10683,5434
+ Divorced,4443,2190
+ Separated,1025,505
+ Widowed,993,525
+ Married-spouse-absent,418,210
+ Married-AF-spouse,23,14

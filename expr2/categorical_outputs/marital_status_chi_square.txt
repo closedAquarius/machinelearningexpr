@@ -1,0 +1,14 @@
+Feature: marital_status
+chi2=6517.741653663022
+p=0.0
+dof=6
+Contingency Table:
+income_bin                  0     1
+marital_status                     
+ Divorced                3980   463
+ Married-AF-spouse         13    10
+ Married-civ-spouse      8284  6692
+ Married-spouse-absent    384    34
+ Never-married          10192   491
+ Separated                959    66
+ Widowed                  908    85

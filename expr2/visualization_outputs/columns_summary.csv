@@ -1,0 +1,16 @@
+,dtype,n_unique,n_missing
+age,int64,73,0
+workclass,object,9,0
+fnlwgt,int64,21648,0
+education,object,16,0
+education_num,int64,16,0
+marital_status,object,7,0
+occupation,object,15,0
+relationship,object,6,0
+race,object,5,0
+sex,object,2,0
+capital_gain,int64,119,0
+capital_loss,int64,92,0
+hours_per_week,int64,94,0
+native_country,object,42,0
+income,object,2,0

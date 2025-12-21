@@ -1,0 +1,17 @@
+category,train_count,test_count
+ HS-grad,10501,5283
+ Some-college,7291,3587
+ Bachelors,5355,2670
+ Masters,1723,934
+ Assoc-voc,1382,679
+ 11th,1175,637
+ Assoc-acdm,1067,534
+ 10th,933,456
+ 7th-8th,646,309
+ Prof-school,576,258
+ 9th,514,242
+ 12th,433,224
+ Doctorate,413,181
+ 5th-6th,333,176
+ 1st-4th,168,79
+ Preschool,51,32

@@ -1,0 +1,12 @@
+Feature: race
+chi2=330.9204310085741
+p=2.305960610160958e-70
+dof=4
+Contingency Table:
+income_bin               0     1
+race                            
+ Amer-Indian-Eskimo    275    36
+ Asian-Pac-Islander    763   276
+ Black                2737   387
+ Other                 246    25
+ White               20699  7117

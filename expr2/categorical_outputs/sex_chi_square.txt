@@ -1,0 +1,9 @@
+Feature: sex
+chi2=1517.813409134445
+p=0.0
+dof=1
+Contingency Table:
+income_bin      0     1
+sex                    
+ Female      9592  1179
+ Male       15128  6662

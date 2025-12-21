@@ -1,0 +1,16 @@
+Feature: workclass
+chi2=1045.7085997281692
+p=2.026505431120716e-220
+dof=8
+Contingency Table:
+income_bin             0     1
+workclass                     
+ ?                  1645   191
+ Federal-gov         589   371
+ Local-gov          1476   617
+ Never-worked          7     0
+ Private           17733  4963
+ Self-emp-inc        494   622
+ Self-emp-not-inc   1817   724
+ State-gov           945   353
+ Without-pay          14     0
