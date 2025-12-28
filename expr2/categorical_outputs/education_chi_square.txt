@@ -1,0 +1,23 @@
+Feature: education
+chi2=4429.653302288619
+p=0.0
+dof=15
+Contingency Table:
+income_bin        0     1
+education                
+ 10th           871    62
+ 11th          1115    60
+ 12th           400    33
+ 1st-4th        162     6
+ 5th-6th        317    16
+ 7th-8th        606    40
+ 9th            487    27
+ Assoc-acdm     802   265
+ Assoc-voc     1021   361
+ Bachelors     3134  2221
+ Doctorate      107   306
+ HS-grad       8826  1675
+ Masters        764   959
+ Preschool       51     0
+ Prof-school    153   423
+ Some-college  5904  1387

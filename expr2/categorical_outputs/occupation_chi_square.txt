@@ -1,0 +1,22 @@
+Feature: occupation
+chi2=4031.974280247181
+p=0.0
+dof=14
+Contingency Table:
+income_bin             0     1
+occupation                    
+ ?                  1652   191
+ Adm-clerical       3263   507
+ Armed-Forces          8     1
+ Craft-repair       3170   929
+ Exec-managerial    2098  1968
+ Farming-fishing     879   115
+ Handlers-cleaners  1284    86
+ Machine-op-inspct  1752   250
+ Other-service      3158   137
+ Priv-house-serv     148     1
+ Prof-specialty     2281  1859
+ Protective-serv     438   211
+ Sales              2667   983
+ Tech-support        645   283
+ Transport-moving   1277   320

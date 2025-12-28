@@ -1,0 +1,13 @@
+Feature: relationship
+chi2=6699.07689685885
+p=0.0
+dof=5
+Contingency Table:
+income_bin          0     1
+relationship               
+ Husband         7275  5918
+ Not-in-family   7449   856
+ Other-relative   944    37
+ Own-child       5001    67
+ Unmarried       3228   218
+ Wife             823   745

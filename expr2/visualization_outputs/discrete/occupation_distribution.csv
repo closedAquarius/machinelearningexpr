@@ -1,0 +1,16 @@
+category,train_count,test_count
+ Prof-specialty,4140,2032
+ Craft-repair,4099,2013
+ Exec-managerial,4066,2020
+ Adm-clerical,3770,1841
+ Sales,3650,1854
+ Other-service,3295,1628
+ Machine-op-inspct,2002,1020
+ ?,1843,966
+ Transport-moving,1597,758
+ Handlers-cleaners,1370,702
+ Farming-fishing,994,496
+ Tech-support,928,518
+ Protective-serv,649,334
+ Priv-house-serv,149,93
+ Armed-Forces,9,6

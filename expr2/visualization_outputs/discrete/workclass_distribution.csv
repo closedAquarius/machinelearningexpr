@@ -1,0 +1,10 @@
+category,train_count,test_count
+ Private,22696,11210
+ Self-emp-not-inc,2541,1321
+ Local-gov,2093,1043
+ ?,1836,963
+ State-gov,1298,683
+ Self-emp-inc,1116,579
+ Federal-gov,960,472
+ Without-pay,14,7
+ Never-worked,7,3

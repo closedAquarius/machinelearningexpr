@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <title>肺炎图像识别部署</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        /* 调整最大宽度以容纳历史列表 */
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; border: 1px solid #ccc; border-radius: 8px; }
+        .result { margin-top: 15px; padding: 10px; border-radius: 5px; font-size: 1.1em; }
+        .success { background-color: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background-color: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+
+        /* 历史列表样式 */
+        .history-section { padding-top: 20px; border-top: 1px solid #eee; margin-top: 20px;}
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; font-size: 0.9em;}
+        th { background-color: #f2f2f2; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>肺炎图像识别系统 (CNN + AE)</h1>
+
+        <div class="upload-section">
+            <p>请选择一张胸部X光片进行预测。</p>
+
+            <form method="POST" action="/predict" enctype="multipart/form-data">
+                <input type="file" name="file" id="fileInput" accept="image/png, image/jpeg, image/jpg" required>
+                <button type="submit">上传并预测</button>
+            </form>
+
+            <div style="margin-top: 20px; text-align: center; border: 1px dashed #ccc; padding: 10px;">
+                <h3>预览/预测图片</h3>
+                <img id="imagePreview"
+                     src="{% if uploaded_image %}{{ uploaded_image }}{% endif %}"
+                     alt="Image Preview"
+                     style="max-width: 100%; max-height: 250px; height: auto; display: block; margin: 0 auto;
+                     {% if not uploaded_image %}display: none;{% endif %}"> {% if result %}
+                    <div class="result {% if error %}error{% else %}success{% endif %}">
+                        <h2>预测结果</h2>
+                        <p>{{ result }}</p>
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+
+        <div class="history-section">
+            <h2>预测历史记录</h2>
+            {% if history %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>图片</th> <th>时间</th>
+                        <th>文件名</th>
+                        <th>预测结果</th>
+                        <th>置信度</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for record in history %}
+                    <tr>
+                        <td>
+                            {% if record.image_base64 %}
+                            <img src="{{ record.image_base64 }}"
+                                 alt="Record Thumbnail"
+                                 style="width: 50px; height: 50px; object-fit: cover; border: 1px solid #ddd;">
+                            {% else %}
+                            N/A
+                            {% endif %}
+                        </td>
+                        <td>{{ record.timestamp }}</td>
+                        <td>{{ record.filename }}</td>
+                        <td><strong>{{ record.prediction }}</strong></td>
+                        <td>{{ record.confidence }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            {% else %}
+            <p>暂无历史记录。</p>
+            {% endif %}
+        </div>
+    </div>
+    </div>
+
+    <script>
+        document.getElementById('fileInput').onchange = function (event) {
+            const [file] = event.target.files;
+            if (file) {
+                const preview = document.getElementById('imagePreview');
+                // 创建一个本地 URL 来预览图片
+                preview.src = URL.createObjectURL(file);
+                // 确保图片可见
+                preview.style.display = 'block';
+            }
+        };
+    </script>
+</body>
+</html>
